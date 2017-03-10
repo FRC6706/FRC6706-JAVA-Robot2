@@ -5,27 +5,14 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 /**
  *
  */
-public class MyAutoCommand1 extends CommandGroup {
+public class MyAutoCommand3 extends CommandGroup {
 
-    public MyAutoCommand1() {
-        // Add Commands here:
+    public MyAutoCommand3() {
     	addSequential(new GyroDriveCommand(0.5, 0.485), 4);  //2.47m
     	addSequential(new GyroDriveCommand(0.5, 0.485), 0.3); //2.5 90D
-    	addSequential(new GyroDriveCommand(0.5, -0.485), 1.35);
-    	addSequential(new GyroDriveCommand(0.5, 0.485), 2.2);
-    	//addSequential(new GyroDriveCommand(0.4, 0.605), 0.5);  //45D
-    	//addParallel(new GetInBallCommand(), 10);
-        //addSequential(new CastOutBallCommand(), 10);
-        /*
-         addSequential(new GyroDriveCommand(0.646, 0.605), 1);  //2.47m
-    	 addSequential(new GyroDriveCommand(0.4, 0.605), 0.5);  //45D
-        * /
-        
-        
-        
-         * 
-         */
-        
+        // Add Commands here:
+        // e.g. addSequential(new Command1());
+        //      addSequential(new Command2());
         // these will run in order.
 
         // To run multiple commands at the same time,

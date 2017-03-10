@@ -8,9 +8,10 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class MyAutoCommand2 extends CommandGroup {
 
     public MyAutoCommand2() {
-    	addSequential(new GyroDriveCommand(0.5, 0.5), 1);
-    	addParallel(new GetInBallCommand(), 2);
-        addSequential(new CastOutBallCommand(), 2);
+    	addSequential(new GyroDriveCommand(0.5, 0.485), 4);  //2.47m
+    	addSequential(new GyroDriveCommand(0.5, 0.485), 0.3); //2.5 90D
+    	addSequential(new GyroDriveCommand(-0.5, 0.485), 1.35);
+    	addSequential(new GyroDriveCommand(0.5, 0.485), 2.2);
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());

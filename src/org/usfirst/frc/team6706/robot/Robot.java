@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc.team6706.robot.commands.GyroDriveCommand;
 import org.usfirst.frc.team6706.robot.commands.MyAutoCommand1;
 import org.usfirst.frc.team6706.robot.commands.MyAutoCommand2;
+import org.usfirst.frc.team6706.robot.commands.MyAutoCommand3;
 import org.usfirst.frc.team6706.robot.subsystems.CastBallSubsystem;
 import org.usfirst.frc.team6706.robot.subsystems.ClimbRopeSubsystem;
 import org.usfirst.frc.team6706.robot.subsystems.DriveTrainSubsystem;
@@ -45,9 +46,10 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		oi = new OI();
 		autoChooser = new SendableChooser<Command>();
+		
 		autoChooser.addDefault("My Auto 1", new MyAutoCommand1());
-		autoChooser.addObject("My Auto 2", new MyAutoCommand2());
-		autoChooser.addObject("My Auto 3", new GyroDriveCommand(0.6, 0.6));
+		//autoChooser.addObject("My Auto 2", new MyAutoCommand2());
+		//autoChooser.addObject("My Auto 3", new MyAutoCommand3());
 		SmartDashboard.putData("Auto mode", autoChooser);
 	}
 

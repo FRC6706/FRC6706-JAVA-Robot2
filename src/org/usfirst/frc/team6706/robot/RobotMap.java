@@ -40,4 +40,6 @@ public class RobotMap {
 		public static final double SlowCrossTime = 3;
 		public static final double FastCrossSpeed = 0.4;
 		public static final double FastCrossTime = 3;
+		//Auto
+		public static final int position = 0;
 }
